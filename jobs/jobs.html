@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs Page - Jobs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="userName">UserName</div>
+      <div>Peoples</div>
+      <div>Jobs</div>
+      <div id="whoIam">I am Pathan</div>
+      <div id="jobPost"><a href="../postJob/postJob.html">Post a Job</a></div>
+      <div>logout</div>
+    </div>
+    <div id="jobPostArea">
+      <!-- <div
+        class=""
+        style="border: 1px solid black; border-radius: 15px; padding: 50px"
+      >
+        <div class="">
+          <div class="">
+            <p class="">Indeed Team</p>
+            <p class="">Database Programmer</p>
+            <p class="">Rs100k - 150k</p>
+          </div>
+          <div class="">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="">
+          <p class="">
+            A Bachelor’s Degree from an accredited college or university with a
+            major in computer science or a closely related field, including
+            course work in both applications programming and systems analysis.
+          </p>
+        </div>
+        <div class="">
+          <button class="" tabindex="0" type="button">
+            Hybird<span class=""></span>
+          </button>
+          <p class="">Karachi, Pakistan</p>
+        </div>
+        <div class="">
+          <p class="">1 day ago</p>
+        </div>
+      </div> -->
+    </div>
+
+    <script type="module" src="jobs.js"></script>
+  </body>
+</html>
